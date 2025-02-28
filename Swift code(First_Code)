@@ -1,0 +1,25 @@
+import UIKit
+
+class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+
+var age: Int!
+var str: String = "Hello"  // non - optional variable
+var regno: Int? = nil    // optional variable
+
+    @IBOutlet weak var lbl: UILabel! 
+    @IBAction func btnSubmit(_ sender: Any) {
+        var age: Int? = nil // Changed to an optional Int
+        print(age ?? "Age is nil") // Nil-coalescing operator to avoid crashes
+
+        lbl.text = "LPU"
+        
+        // Assuming you meant lbl instead of 1b1
+        lbl.backgroundColor = UIColor.blue 
+    }
+}
